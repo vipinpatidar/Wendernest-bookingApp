@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  height: 100%;
+}
+
+.formInput {
+  @apply w-full border border-gray-300 py-2 my-2 px-4 outline-none rounded-2xl;
+}
+
+.formBtn {
+  @apply w-full bg-hover hover:bg-hero text-white mt-3 py-[0.6rem] px-4 rounded-2xl;
+}
+.confirmBtn {
+  @apply w-full bg-hover hover:bg-hero text-white py-[0.6rem] px-4 rounded-full uppercase tracking-wider text-[0.9rem];
+}
+
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 1;
+  -webkit-appearance: none;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  opacity: 1;
+}
