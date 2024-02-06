@@ -43,7 +43,10 @@ app.use(bodyParser.json());
 app.use(
   cors({
     credentials: true,
-    origin: "http://localhost:5173",
+    origin: [
+      "http://localhost:5173",
+      "https://wandernest-booking-vipin.netlify.app",
+    ],
   })
 );
 
