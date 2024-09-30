@@ -10,8 +10,7 @@ import { authRoutes } from "./routes/auth.js";
 import { profileRoutes } from "./routes/admin.js";
 import { homeRoutes } from "./routes/home.js";
 import { bookingRoutes } from "./routes/booking.js";
-import dotenv from "dotenv";
-dotenv.config();
+import "dotenv/config";
 
 const app = express();
 const port = process.env.PORT || 8080;
@@ -65,7 +64,7 @@ app.use("/home", homeRoutes);
 app.use(bookingRoutes);
 
 app.use((error, req, res, next) => {
-  console.log(error);
+  // console.log(error);
   const status = error.statusCode;
   const message = error.message;
   const data = error?.data;

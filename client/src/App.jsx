@@ -1,7 +1,6 @@
 import React, { useContext, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Routes, Route } from "react-router-dom";
 import "./App.css";
-import { Routes, Route } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import LoginPage from "./pages/LoginPage";
 import Layout from "./layouts/Layout";
@@ -23,7 +22,7 @@ function App() {
   };
 
   const setAutoLogout = (milliseconds) => {
-    console.log(milliseconds);
+    // console.log(milliseconds);
     setTimeout(() => {
       logoutHandler();
     }, milliseconds);

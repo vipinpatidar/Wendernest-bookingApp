@@ -31,7 +31,7 @@ const HomeSearchPlace = ({
         </label>
         <input
           className="px-3 py-[10px] border-none outline-none w-[280px]"
-          type="text"
+          type="search"
           name="search"
           id="search"
           placeholder="Search a location..."

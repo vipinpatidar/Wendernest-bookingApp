@@ -15,7 +15,3 @@ ReactDOM.createRoot(document.getElementById("root")).render(
   </React.StrictMode>
 );
 
-/*
-vipinpatidar5 =123456
-bittu =123456
-*/

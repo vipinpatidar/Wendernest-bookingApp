@@ -51,7 +51,7 @@ const Navbar = ({ logoutHandler }) => {
             <li onClick={menuOpenClose}>
               <Link
                 to={"/"}
-                className="h-12 hover:bg-gray-100 w-full flex justify-center items-center cursor-pointer uppercase border-b text-[1rem]"
+                className="h-12 hover:bg-gray-100 w-full flex justify-center items-center cursor-pointer  border-b text-[1rem]"
               >
                 Home
               </Link>
@@ -60,7 +60,7 @@ const Navbar = ({ logoutHandler }) => {
               <li onClick={menuOpenClose}>
                 <Link
                   to={"/admin"}
-                  className="h-12 hover:bg-gray-100 w-full flex justify-center items-center cursor-pointer uppercase border-b"
+                  className="h-12 hover:bg-gray-100 w-full flex justify-center items-center cursor-pointer  border-b"
                 >
                   Profile
                 </Link>
@@ -68,7 +68,7 @@ const Navbar = ({ logoutHandler }) => {
             )}
             {name && (
               <li onClick={logoutClickHandler}>
-                <Link className="h-12 hover:bg-gray-100 w-full flex justify-center items-center cursor-pointer uppercase">
+                <Link className="h-12 hover:bg-gray-100 w-full flex justify-center items-center cursor-pointer ">
                   Log Out
                 </Link>
               </li>
@@ -77,13 +77,13 @@ const Navbar = ({ logoutHandler }) => {
               <li onClick={menuOpenClose}>
                 <Link
                   to={"/register"}
-                  className="h-12 hover:bg-gray-100 w-full flex justify-center items-center cursor-pointer uppercase"
+                  className="h-12 hover:bg-gray-100 w-full flex justify-center items-center cursor-pointer "
                 >
                   Register
                 </Link>
                 <Link
                   to={"/login"}
-                  className="h-12 hover:bg-gray-100 w-full flex justify-center items-center cursor-pointer uppercase"
+                  className="h-12 hover:bg-gray-100 w-full flex justify-center items-center cursor-pointer "
                 >
                   Log In
                 </Link>
